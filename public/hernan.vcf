@@ -1,0 +1,15 @@
+BEGIN:VCARD
+VERSION:3.0
+N:Andrade - AngoTrans;Hernan;;;
+FN:Hernan Andrade - AngoTrans
+ORG:AngoTrans
+TITLE:Conductor Profesional
+
+TEL;TYPE=CELL:+56984546430
+EMAIL;TYPE=WORK:contacto@angotrans.cl
+URL:https://angotrans.cl
+
+ADR;TYPE=WORK:;;Castro;Chiloé;;Chile
+NOTE:Tours personalizados y traslados privados en Chiloé
+
+END:VCARD
