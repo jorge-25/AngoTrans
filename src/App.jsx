@@ -11,6 +11,7 @@ import PageTransition from "./components/PageTransition"
 import ScrollToTop from "./components/ScrollToTop"
 import FormularioContacto from "./components/FormularioContanto"
 import Nosotros from "./pages/Nosotros"
+import TourPage from "./pages/TourPage"
 
 const TarjetaHernan = lazy(() => import("./pages/TarjetaHernan"))
 
@@ -44,6 +45,7 @@ export default function App() {
               <Route path="/" element={<Home />} />
               <Route path="/servicios" element={<Servicios />} />
               <Route path="/nosotros" element={<Nosotros />} />
+              <Route path="/tours/:slug" element={<TourPage />} />
             </Routes>
           )}
         </Suspense>

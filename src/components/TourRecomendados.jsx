@@ -6,40 +6,46 @@ import TourCard from "./TourCard"
 
 const tours = [
   {
-    nombre: "Palafitos y Castro histórico",
+    nombre: "Muelle del tiempo",
+    slug: "muelle-del-tiempo",
     descripcion:
       "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur optio, incidunt, explicabo deleniti adipisci provident et impedit voluptates similique distinctio magni, modi minima blanditiis quas fugit quo sapiente enim esse?",
-    imagenes: ["/palafitos.webp", "/iglesiaCastro.webp"],
+    imagenes: ["/muelle-del-tiempo.jpg"],
   },
   {
     nombre: "Parque Nacional Chiloé",
+    slug: "parque-nacional-chiloe",
     descripcion:
       "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex ab ea, nemo qui eligendi corporis quidem, ad iste id inventore maxime dolor voluptate ipsum tempore assumenda sequi quaerat minima libero!",
-    imagenes: ["/paisaje2.jpg", "/paisaje3.jpg"],
+    imagenes: ["/tours/tour-18.webp"],
   },
   {
-    nombre: "Tour3",
+    nombre: "Tour de la Costa",
+    slug: "costa",
     descripcion:
       "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex ab ea, nemo qui eligendi corporis quidem, ad iste id inventore maxime dolor voluptate ipsum tempore assumenda sequi quaerat minima libero!",
-    imagenes: ["/paisaje4.jpg", "/faro.jpg"],
+    imagenes: ["/tours/tour-11.webp"],
   },
   {
-    nombre: "Tour4",
+    nombre: "Isla Lemuy y sus Iglesias",
+    slug: "isla-lemuy-iglesias",
     descripcion:
       "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex ab ea, nemo qui eligendi corporis quidem, ad iste id inventore maxime dolor voluptate ipsum tempore assumenda sequi quaerat minima libero!",
-    imagenes: ["/ford.webp", "/faro.jpg"],
+    imagenes: ["/tours/tour-12.webp"],
   },
   {
-    nombre: "Tour5",
+    nombre: "Isla Quinchao",
+    slug: "isla-quinchao",
     descripcion:
       "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex ab ea, nemo qui eligendi corporis quidem, ad iste id inventore maxime dolor voluptate ipsum tempore assumenda sequi quaerat minima libero!",
-    imagenes: ["/casa-voladora.jpg", "/palafitos.webp"],
+    imagenes: ["/mirador-alto-la-paloma.jpg"],
   },
   {
-    nombre: "Tour6",
+    nombre: "Isla Paraíso",
+    slug: "isla-paraiso",
     descripcion:
       "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex ab ea, nemo qui eligendi corporis quidem, ad iste id inventore maxime dolor voluptate ipsum tempore assumenda sequi quaerat minima libero!",
-    imagenes: ["/muelle-de-la-luz.jpg", "/faro.jpg"],
+    imagenes: ["/tours/tour-7.webp"],
   },
 ]
 

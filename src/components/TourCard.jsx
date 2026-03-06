@@ -1,10 +1,11 @@
 import { Swiper, SwiperSlide } from "swiper/react"
 import { Pagination } from "swiper/modules"
 import { MessageCircle } from "lucide-react"
+import { Link } from "react-router-dom"
 import "swiper/css"
 import "swiper/css/pagination"
 
-export default function TourCard({ nombre, descripcion, imagenes }) {
+export default function TourCard({ nombre, descripcion, imagenes, slug }) {
 
   const mensaje = `Hola!, me interesa el tour "${nombre}". Me gustaría recibir más información.`
   const whatsappURL = `https://wa.me/56984546430?text=${encodeURIComponent(mensaje)}`
@@ -55,30 +56,53 @@ export default function TourCard({ nombre, descripcion, imagenes }) {
           {descripcion}
         </p>
 
-        {/* Botón WhatsApp */}
-        <a
-          href={whatsappURL}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="
-            inline-flex
-            items-center
-            justify-center
-            gap-2
-            px-4
-            py-3
-            rounded-xl
-            bg-primary
-            text-white
-            font-semibold
-            text-sm
-            hover:scale-105
-            transition
-          "
-        >
-          <MessageCircle size={18} />
-          Más información
-        </a>
+{/* Botón ver tour */}
+<Link
+  to={`/tours/${slug}`}
+  className="
+    inline-flex
+    items-center
+    justify-center
+    px-4
+    py-3
+    mb-3
+    rounded-xl
+    border border-primary
+    text-primary
+    font-semibold
+    text-sm
+    hover:bg-primary
+    hover:text-white
+    transition
+  "
+>
+  Ver detalles del tour
+</Link>
+
+{/* Botón WhatsApp */}
+<a
+  href={whatsappURL}
+  target="_blank"
+  rel="noopener noreferrer"
+  className="
+    inline-flex
+    items-center
+    justify-center
+    gap-2
+    px-4
+    py-3
+    rounded-xl
+    bg-primary
+    text-white
+    font-semibold
+    text-sm
+    hover:scale-105
+    transition
+  "
+>
+  <MessageCircle size={18} />
+  WhatsApp
+</a>
       </div>
     </div>
   )

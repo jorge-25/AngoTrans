@@ -17,12 +17,12 @@ export default function ServiciosHome() {
   ]
 
   const toursDestacados = [
-    "Palafitos y Castro histórico",
+    "Tour Muelle del Tiempo",
     "Parque Nacional Chiloé",
-    "Dalcahue y sus mercados",
-    "Ancud y Fuerte San Antonio",
-    "Pingüineras de Puñihuil",
-    "Chonchi y Cucao"
+    "Tour de la Costa",
+    "Tour Isla Lemuy y sus Iglesias",
+    "Tour Isla Quinchao",
+    "Tour Isla Paraíso"
   ]
 
   return (
