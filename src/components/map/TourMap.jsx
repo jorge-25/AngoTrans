@@ -11,15 +11,7 @@ export default function TourMap({ route, stops }) {
   return (
     <div className="h-[450px] w-full rounded-3xl overflow-hidden">
 
-      <Map center={route[0]} zoom={8}>
-
-        <MapRoute
-          coordinates={route}
-          color="#0ea5e9"
-          width={4}
-          opacity={0.8}
-        />
-
+      <Map theme="light" center={route[0]} zoom={8}>
         {stops.map((stop, index) => (
           <MapMarker
             key={stop.name}

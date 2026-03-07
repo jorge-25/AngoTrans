@@ -23,7 +23,7 @@ export default function TourPage() {
       meta.name = "description"
       document.head.appendChild(meta)
     }
-    meta.setAttribute("content", tour.description)
+    meta.setAttribute("content", tour.metaDescription)
 
     let link = document.querySelector("link[rel='canonical']")
     if (!link) {
@@ -121,7 +121,7 @@ export default function TourPage() {
 
       {/* ── ITINERARIO ── */}
       <section className="py-16 px-6">
-        <div className="max-w-4xl mx-auto">
+        <div className="max-w-5xl mx-auto">
 
           <motion.h2
             initial={{ opacity: 0, y: 20 }}
@@ -174,7 +174,7 @@ export default function TourPage() {
             transition={{ duration: 0.6 }}
             className="text-3xl font-bold mb-8"
           >
-            Ruta del recorrido
+            Ubicaciones del recorrido
           </motion.h2>
 
           <motion.div
@@ -188,6 +188,33 @@ export default function TourPage() {
 
         </div>
       </section>
+
+{/* ── LUGARES DESTACADOS ── */}
+<section className="py-20 px-6">
+  <div className="max-w-5xl mx-auto">
+
+    <h2 className="text-3xl font-bold mb-12">
+      Lugares destacados del recorrido
+    </h2>
+
+    <div className="space-y-10">
+      {tour.highlights?.map((place, i) => (
+        <div key={i} className="border-l-2 border-primary pl-6">
+
+          <h3 className="text-xl font-semibold mb-2">
+            {place.title}
+          </h3>
+
+          <p className="text-black/70 leading-relaxed">
+            {place.description}
+          </p>
+
+        </div>
+      ))}
+    </div>
+
+  </div>
+</section>
 
     </PageTransition>
   )

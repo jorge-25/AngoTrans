@@ -6,24 +6,24 @@ import TourCard from "./TourCard"
 
 const tours = [
   {
-    nombre: "Muelle del tiempo",
+    nombre: "Muelle del Tiempo",
     slug: "muelle-del-tiempo",
     descripcion:
-      "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur optio, incidunt, explicabo deleniti adipisci provident et impedit voluptates similique distinctio magni, modi minima blanditiis quas fugit quo sapiente enim esse?",
+      "Explora la costa de Chiloé pasando por iglesias patrimoniales, lagos y pueblos tradicionales hasta llegar al icónico Muelle del Tiempo frente al océano Pacífico.",
     imagenes: ["/muelle-del-tiempo.jpg"],
   },
   {
     nombre: "Parque Nacional Chiloé",
     slug: "parque-nacional-chiloe",
     descripcion:
-      "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex ab ea, nemo qui eligendi corporis quidem, ad iste id inventore maxime dolor voluptate ipsum tempore assumenda sequi quaerat minima libero!",
+      "Recorre la costa de Chiloé hasta el Parque Nacional Chiloé, explorando bosques nativos, pasarelas y paisajes naturales, junto a pueblos tradicionales e iglesias patrimoniales.",
     imagenes: ["/tours/tour-18.webp"],
   },
   {
     nombre: "Tour de la Costa",
     slug: "costa",
     descripcion:
-      "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex ab ea, nemo qui eligendi corporis quidem, ad iste id inventore maxime dolor voluptate ipsum tempore assumenda sequi quaerat minima libero!",
+      "Recorre la costa norte de Chiloé visitando Dalcahue y sus maravillas, la cascada Tocoihue, Tenaún, la histórica iglesia de Colo y la Isla Aucar, un pintoresco islote unido por una pasarela.",
     imagenes: ["/tours/tour-11.webp"],
   },
   {
