@@ -30,14 +30,14 @@ const tours = [
     nombre: "Isla Lemuy y sus Iglesias",
     slug: "isla-lemuy-iglesias",
     descripcion:
-      "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex ab ea, nemo qui eligendi corporis quidem, ad iste id inventore maxime dolor voluptate ipsum tempore assumenda sequi quaerat minima libero!",
+      "Recorre la Isla Lemuy y descubre sus iglesias patrimoniales de madera como Ichuac, Detif y Aldachildo, además de Chonchi y los tradicionales palafitos de Castro.",
     imagenes: ["/tours/tour-12.webp"],
   },
   {
     nombre: "Isla Quinchao",
     slug: "isla-quinchao",
     descripcion:
-      "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex ab ea, nemo qui eligendi corporis quidem, ad iste id inventore maxime dolor voluptate ipsum tempore assumenda sequi quaerat minima libero!",
+      "Descubre la Isla Quinchao visitando Dalcahue, Curaco de Vélez, Achao y Villa Quinchao, con sus históricas iglesias patrimoniales y paisajes típicos del archipiélago de Chiloé.",
     imagenes: ["/mirador-alto-la-paloma.jpg"],
   },
   {

@@ -60,8 +60,8 @@ export default function TourPage() {
   if (!tour) {
     return <div>Tour no encontrado</div>
   }
-
-  const whatsappUrl = `https://wa.me/56912345678?text=Hola%2C%20me%20interesa%20el%20${encodeURIComponent(tour.title)}`
+  const mensaje = `Hola!, me interesa "${tour.title}". Me gustaría recibir más información.`
+  const whatsappUrl = `https://wa.me/56984546430?text=${encodeURIComponent(mensaje)}`
 
   return (
     <PageTransition>

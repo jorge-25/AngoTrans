@@ -240,6 +240,45 @@ export default function Servicios() {
   <MapSection/>
 </Suspense>
 
+{/* ── CTA destino personalizado ── Pegar entre <MapSection/> y la galería ── */}
+<motion.div
+  initial={{ opacity: 0, y: 20 }}
+  whileInView={{ opacity: 1, y: 0 }}
+  viewport={{ once: true }}
+  transition={{ duration: 0.6 }}
+  className="mt-32 flex flex-col md:flex-row items-center gap-8 rounded-3xl border border-primary/20 bg-primary/5 px-10 py-10"
+>
+  {/* Icono decorativo */}
+  <div className="shrink-0 p-5 rounded-full bg-primary/10">
+    <MapPin size={36} className="text-primary" />
+  </div>
+
+  {/* Texto */}
+  <div className="flex-1 text-center md:text-left">
+    <h3 className="text-xl md:text-2xl font-semibold text-black mb-2">
+      ¿Quieres visitar un lugar en especial?
+    </h3>
+    <p className="text-black/60 leading-relaxed">
+      Si tienes en mente un destino que no aparece en el mapa o en nuestros tours recomendados, cuéntanos.
+      Armamos el recorrido a tu medida.
+    </p>
+  </div>
+
+  {/* Botón */}
+  <motion.a
+    href="https://wa.me/56984546430?text=Hola!%20me%20gustar%C3%ADa%20visitar%20un%20lugar%20en%20especial%20en%20Chilo%C3%A9.%20%C2%BFPodr%C3%ADamos%20conversarlo%3F"
+    target="_blank"
+    rel="noopener noreferrer"
+    whileHover={{ scale: 1.04 }}
+    whileTap={{ scale: 0.96 }}
+    className="shrink-0 inline-flex items-center gap-2 px-7 py-3 rounded-xl bg-primary text-white font-medium text-sm transition hover:opacity-90"
+  >
+    <MessageCircle size={18} />
+    Conversemos
+  </motion.a>
+</motion.div>
+{/* ── fin CTA ── */}
+
 <section className="pt-32 pb-16 px-6">
   <Gallery images={photos} rows={2}/>
 </section>

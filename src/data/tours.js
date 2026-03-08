@@ -3,7 +3,7 @@ export const tours = [
     slug: "muelle-del-tiempo",
     title: "Tour Muelle del Tiempo",
     description:
-      "El muelle del tiempo está ubicado en la zona costa del Parque Tepuhueico, es una zona maravillosa y aún salvaje, es un área de conservación con acantilados poblados de aves, se pueden observar delfines y lobos marinos, en una breve caminata se llega al Muelle del Tiempo, obra realizada por el escultor Marcelo Orellana Rivera (apodado Chupino).",
+      "El muelle del tiempo está ubicado en la zona costa del Parque Tepuhueico, es una zona maravillosa y aún salvaje, es un área de conservación con acantilados poblados de aves, se pueden observar delfines y lobos marinos, en una breve caminata se llega al Muelle del Tiempo, obra realizada por el escultor Marcelo Orellana Rivera (apodado chumono).",
 
     metaDescription: "Explora la costa de Chiloé pasando por iglesias patrimoniales, lagos y pueblos tradicionales hasta llegar al icónico Muelle del Tiempo frente al océano Pacífico.",
     heroImage: "/muelle-del-tiempo.jpg",
@@ -134,7 +134,7 @@ export const tours = [
 
     itinerary: [
       "Salida desde Castro",
-      "Visita a Dalcahue - Costanera - Feria - Iglesia - Plaza",
+      "Visita a Dalcahue - Costanera - Feria Artesanal - Iglesia - Plaza",
       "Cascada Tocoihue",
       "Tenaún",
       "Iglesia de Colo",
@@ -175,56 +175,119 @@ export const tours = [
     slug: "isla-lemuy-iglesias",
     title: "Tour Isla Lemuy y sus Iglesias",
     description:
-      "Descubre Ancud, una de las ciudades más históricas de Chiloé, visitando el Fuerte San Antonio, el mercado municipal y la costanera.",
+      "Este recorrido permite descubrir la Isla Lemuy, uno de los lugares más tradicionales del Archipiélago de Chiloé, conocido por su paisaje costero y sus históricas iglesias de madera. Durante el tour se visitan Chonchi y la Iglesia Patrimonial de Nercón, para luego continuar hacia Lemuy y conocer las iglesias de Ichuac, Detif y Aldachildo, templos que forman parte de las 16 Iglesias de Chiloé declaradas Patrimonio de la Humanidad por la UNESCO. El recorrido permite apreciar la arquitectura chilota, la cultura local y los paisajes del archipiélago, finalizando con el regreso a Castro y una visita a los tradicionales palafitos que caracterizan la ciudad.",
 
+    metaDescription: "Recorre la Isla Lemuy y descubre sus iglesias patrimoniales de madera como Ichuac, Detif y Aldachildo, además de Chonchi y los tradicionales palafitos de Castro.",
     heroImage: "/tours/tour-16.webp",
 
     route: [
       [-73.7669, -42.4721], // Castro
-      [-73.6526, -42.3789], // Dalcahue
-      [-73.8203, -41.8697], // Ancud
     ],
 
     stops: [
-      { name: "Castro", lng: -73.7669, lat: -42.4721 },
-      { name: "Dalcahue", lng: -73.6526, lat: -42.3789 },
-      { name: "Ancud", lng: -73.8203, lat: -41.8697 },
+      { name: "Castro", lng: -73.7644, lat: -42.4823 },
+      { name: "Iglesia de Nercón", lng: -73.7854, lat: -42.5012 },
+      { name: "Chonchi", lng: -73.7723, lat: -42.6236 },
+      { name: "Iglesia de Ichuac", lng: -73.7197, lat: -42.6160 },
+      { name: "Iglesia de Detif", lng: -73.5564, lat: -42.6850 },
+      { name: "Iglesia de Aldachildo", lng: -73.6118, lat: -42.5835 },
+      { name: "Iglesia de Vilipulli", lng: -73.7879, lat: -42.6051 },
+      { name: "Palafitos de Gamboa", lng: -73.7708, lat: -42.4813 },
     ],
 
     itinerary: [
       "Salida desde Castro",
-      "Visita a Dalcahue y su feria artesanal",
-      "Recorrido por el Fuerte San Antonio",
-      "Costanera de Ancud",
+      "Iglesia Patrimonial de Nercón",
+      "Chonchi",
+      "Iglesia de Ichuac",
+      "Iglesia de Detif",
+      "Iglesia de Aldachildo",
+      "Iglesia de Vilipulli",
+      "Palafitos de Gamboa"
     ],
+
+  highlights: [
+    {
+      title: "Iglesia Patrimonial de Nercón",
+      description:
+        "La Iglesia de Nercón, nuestra Señora de Gracia, ubidada a 4 kilómetros al sur de Castro, fue construida por maestros carpinteros locales entre 1880 y 1890, fue declarada patrimonio de la humanidad por la UNESCO el año 2000, en la lengua huilliche, Nercón significa: Entre Lomas."
+    },
+    {
+      title: "Iglesia de Vilipulli",
+      description:
+        "La Iglesia San Antonio de Padua de Vilipulli es un templo católico que se encuentra en la localidad del mismo nombre, ubicado al norte de la ciudad de Chonchi, su construcción fue en el siglo XIX y forma parte de las 16 Iglesias de madera de Chiloé calificadas como Monumento Nacional de Chile y reconocidas como patrimonio de la humanidad por la UNESCO en el año 2000."
+    },
+    {
+      title: "Palafitos de Chiloé",
+      description:
+        "Son casas de madera y tejuelas de alerce, edificadas sobre pilares de lumilla, constan de dos frentes, uno hacia la calle y otro hacia el mar que posee una terraza que cumple la función de patio, más allá de su atractivo, los coloridos Palafitos son para los pobladores un cómodo hogar, símbolo profundo de la relación del pueblo chilote con el mar."
+    }
+  ],
   },
 
   {
     slug: "isla-quinchao",
     title: "Tour Isla Quinchao",
     description:
-      "Descubre Ancud, una de las ciudades más históricas de Chiloé, visitando el Fuerte San Antonio, el mercado municipal y la costanera.",
+      "Este recorrido permite conocer la Isla Quinchao, uno de los destinos más representativos del Archipiélago de Chiloé. El tour comienza con una visita a Dalcahue, conocido por su feria artesanal y su iglesia patrimonial, para luego continuar hacia la isla cruzando el canal hacia Curaco de Vélez, un tranquilo pueblo costero rodeado de naturaleza. Durante el viaje se visita Achao, donde se encuentra la Iglesia Santa María de Loreto, considerada la iglesia de madera más antigua de Chile y parte del conjunto de Iglesias de Chiloé declaradas Patrimonio de la Humanidad por la UNESCO. El recorrido continúa hacia Villa Quinchao y su imponente iglesia, la más grande del archipiélago, finalizando con el regreso a Castro y la visita a los tradicionales palafitos que caracterizan la ciudad.",
 
+    metaDescription: "Descubre la Isla Quinchao visitando Dalcahue, Curaco de Vélez, Achao y Villa Quinchao, con sus históricas iglesias patrimoniales y paisajes típicos del archipiélago de Chiloé.",
     heroImage: "/mirador-alto-la-paloma.jpg",
 
     route: [
       [-73.7669, -42.4721], // Castro
-      [-73.6526, -42.3789], // Dalcahue
-      [-73.8203, -41.8697], // Ancud
     ],
 
     stops: [
-      { name: "Castro", lng: -73.7669, lat: -42.4721 },
-      { name: "Dalcahue", lng: -73.6526, lat: -42.3789 },
-      { name: "Ancud", lng: -73.8203, lat: -41.8697 },
+      { name: "Castro", lng: -73.7644, lat: -42.4823 },
+      { name: "Dalcahue", lng: -73.6473, lat: -42.3795 },
+      { name: "Curaco de Vélez", lng: -73.6021, lat: -42.4387 },
+      { name: "Achao", lng: -73.4881, lat: -42.4709 },
+      { name: "Villa Quinchao", lng: -73.4270, lat: -42.5351 },
+      { name: "Palafitos de Pedro Montt", lng: -73.7649, lat: -42.4703 },
     ],
 
     itinerary: [
       "Salida desde Castro",
-      "Visita a Dalcahue y su feria artesanal",
-      "Recorrido por el Fuerte San Antonio",
-      "Costanera de Ancud",
+      "Dalcahue - Costanera - Feria Artesanal - Iglesia - Plaza",
+      "Curaco de Vélez",
+      "Achao",
+      "Villa Quinchao y su Iglesia",
+      "Palafitos de Pedro Montt"
     ],
+
+  highlights: [
+    {
+      title: "Dalcahue",
+      description:
+        "La ciudad de Dalcahue que en lengua Mapudungun significa lugar de Dalcas, es la capital de la comuna del mismo nombre, su Iglesia fue construida en el siglo XIX y forma parte de las 16 Iglesias del Archipiélago de Chiloé declaradas Patrimonio de la Humanidad por la UNESCO en el año 2000, su feria artesanal ubicada en su costanera se encuentran productos de artesanía hecho con productos locales y artesanos chilotes."
+    },
+    {
+      title: "Curaco de Vélez",
+      description:
+      "Un pueblo ubicado en la Isla de Quinchao, es conocido por su humedal, bahía Curaco de Vélez que está declarado Santuario de la Naturaleza, posee una gran superficie donde se pueden observar distintos tipos de aves, pertenece a la comuna de Curaco de Vélez, su nombre en mapudungun significa agua sobre piedra (cura - piedra y co-agua) y Vélez es el apeliido del primer encomendero español llegado en el siglo XVII."
+    },
+    {
+      title: "Achao",
+      description:
+      "Un pueblo del Archipiélago de Chiloé, es la capital de la comuna de Quinchao ubicado en la Isla del mismo nombre, acá se encuentra la Iglesia Santa María de Loreto de Achao, construida entre 1730 y 1740 por los jesuitas en la Isla Quinchao, siendo la construcción de madera más antigua de Chile y un destacado ejemplo de la escuela chilota de arquitectura religiosa, declarada Monumento Nacional en el año 1951 y está dentro de las 16 Iglesias de Chiloé que fueron reconocidas Patrimonio de la Humanidad por la UNESCO en el año 2000."
+    },
+    {
+      title: "Villa Quinchao",
+      description:
+      "Pertenece a la comuna del mismo nombre, ubicada en la Isla de Quinchao, donde se encuentra la Iglesia Nuestra Señora de Gracia, fue construida en el siglo XVII, pero su edificación terminó en 1880, es la Iglesia más grande del Archipiélago de Chiloé, midiendo 53 metros de largo, 18,4 metros de ancho y posee una torre de más de 18 metros. Esta Iglesia forma parte de las 16 Iglesias de madera que fueron declaradas por la UNESCO Patrimonio de la Humanidad en el año 2000."
+    },
+    {
+      title: "Bosque Palqui",
+      description:
+      "Es una iniciativa de conservación familiar, privada, que busca conservar y restaurar 14 hectáreas de bosque nativo en la Isla de Quinchao, Archipiélago de Chiloé, son la primera división de Nestwatch en Chile, realizan monitoreos de nidos de aves y monitoreo del marsupial Monito del Monte, además, refugio de ranitas, parte de la ONG ranita de Darwin, buscando proteger nuestros anfibios, tienen en curso varios proyectos de restauración y plantación de bosque nativo, realizan talleres y senderismo donde unen arte y educación ambiental.",
+    },
+    {
+      title: "Palafitos de Chiloé",
+      description:
+        "Son casas de madera y tejuelas de alerce, edificadas sobre pilares de lumilla, constan de dos frentes, uno hacia la calle y otro hacia el mar que posee una terraza que cumple la función de patio, más allá de su atractivo, los coloridos Palafitos son para los pobladores un cómodo hogar, símbolo profundo de la relación del pueblo chilote con el mar."
+    }
+  ],
   },
 
   {
@@ -237,21 +300,30 @@ export const tours = [
 
     route: [
       [-73.7669, -42.4721], // Castro
-      [-73.6526, -42.3789], // Dalcahue
-      [-73.8203, -41.8697], // Ancud
     ],
 
     stops: [
-      { name: "Castro", lng: -73.7669, lat: -42.4721 },
-      { name: "Dalcahue", lng: -73.6526, lat: -42.3789 },
-      { name: "Ancud", lng: -73.8203, lat: -41.8697 },
+      { name: "Castro", lng: -73.7644, lat: -42.4823 },
+      { name: "Pueblito Weltún", lng: -73.7313, lat: -42.4764 },
+      { name: "Dalcahue", lng: -73.6473, lat: -42.3795 },
+      { name: "Refugio Mitos de Chiloé", lng: -73.7172, lat: -42.2126 },
+      { name: "Palafitos de Pedro Montt", lng: -73.7649, lat: -42.4703 },
     ],
 
     itinerary: [
       "Salida desde Castro",
-      "Visita a Dalcahue y su feria artesanal",
-      "Recorrido por el Fuerte San Antonio",
-      "Costanera de Ancud",
+      "Pueblito Weltún (Isla Paraíso)",
+      "Dalcahue - Costanera - Feria Artesanal - Iglesia - Plaza",
+      "Parque refugio Mitos de Chiloé",
+      "Palafitos de Pedro Montt"
     ],
+
+  highlights: [
+    {
+      title: "Dalcahue",
+      description:
+        "La ciudad de Dalcahue que en lengua Mapudungun significa lugar de Dalcas, es la capital de la comuna del mismo nombre, su Iglesia fue construida en el siglo XIX y forma parte de las 16 Iglesias del Archipiélago de Chiloé declaradas Patrimonio de la Humanidad por la UNESCO en el año 2000, su feria artesanal ubicada en su costanera se encuentran productos de artesanía hecho con productos locales y artesanos chilotes."
+    },
+  ],
   },
 ]

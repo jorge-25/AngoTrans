@@ -20,4 +20,42 @@
     <changefreq>monthly</changefreq>
   </url>
 
+  <!-- TOURS -->
+
+  <url>
+    <loc>https://angotrans.cl/tours/muelle-del-tiempo</loc>
+    <priority>0.8</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+
+  <url>
+    <loc>https://angotrans.cl/tours/parque-nacional-chiloe</loc>
+    <priority>0.8</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+
+  <url>
+    <loc>https://angotrans.cl/tours/costa</loc>
+    <priority>0.8</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+
+  <url>
+    <loc>https://angotrans.cl/tours/isla-lemuy-iglesias</loc>
+    <priority>0.8</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+
+  <url>
+    <loc>https://angotrans.cl/tours/isla-quinchao</loc>
+    <priority>0.8</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+
+  <url>
+    <loc>https://angotrans.cl/tours/isla-paraiso</loc>
+    <priority>0.8</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+
 </urlset>

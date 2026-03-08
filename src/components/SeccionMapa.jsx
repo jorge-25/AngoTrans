@@ -1,4 +1,5 @@
 import { useState } from "react"
+import { Link } from "react-router-dom"
 import {
   Map,
   MapMarker,
@@ -8,44 +9,57 @@ import {
 
 const locations = [
   {
-    id: "ancud",
-    name: "Ancud",
-    lng: -73.8203,
-    lat: -41.8697,
-    description: "descripcion tour",
-    type: "tour"
-  },
-  {
-    id: "dalcahue",
-    name: "Dalcahue",
-    lng: -73.6526,
-    lat: -42.3789,
-    description: "descripcion tour",
-    type: "tour"
-  },
-  {
-    id: "castro",
-    name: "Castro",
-    lng: -73.7669,
-    lat: -42.4721,
-    description: "descripcion tour",
-    type: "tour"
-  },
-  {
     id: "muelle-del-tiempo",
     name: "Muelle del Tiempo",
     lng: -74.14368207187835,
     lat: -42.746571673362055,
-    description: "Descripcion del tour",
-    image: "/muelle-de-la-luz.jpg",
+    description: "Explora la costa de Chiloé pasando por iglesias patrimoniales, lagos y pueblos tradicionales hasta llegar al icónico Muelle del Tiempo frente al océano Pacífico.",
+    image: "/muelle-del-tiempo.jpg",
     type: "tour"
   },
   {
-    id: "quellon",
-    name: "Quellón",
-    lng: -73.6036,
-    lat: -43.1167,
-    description: "decripcion tour",
+    id: "parque-nacional-chiloe",
+    name: "Parque Nacional Chiloé",
+    lng: -74.10818667980374,
+    lat: -42.6248829935378,
+    description: "Recorre la costa de Chiloé hasta el Parque Nacional Chiloé, explorando bosques nativos, pasarelas y paisajes naturales, junto a pueblos tradicionales e iglesias patrimoniales.",
+    image: "/tours/tour-18.webp",
+    type: "tour"
+  },
+  {
+    id: "costa",
+    name: "Tour de la Costa",
+    lng: -73.37504150421796,
+    lat: -42.33145782627161,
+    description: "Recorre la costa de Chiloé hasta el Parque Nacional Chiloé, explorando bosques nativos, pasarelas y paisajes naturales, junto a pueblos tradicionales e iglesias patrimoniales.",
+    image: "/tours/tour-11.webp",
+    type: "tour"
+  },
+  {
+    id: "isla-lemuy-iglesias",
+    name: "Isla Lemuy y sus Iglesias",
+    lng: -73.65008283909596,
+    lat: -42.61781872194298,
+    description: "Recorre la Isla Lemuy y descubre sus iglesias patrimoniales de madera como Ichuac, Detif y Aldachildo, además de Chonchi y los tradicionales palafitos de Castro.",
+    image: "/tours/tour-12.webp",
+    type: "tour"
+  },
+  {
+    id: "isla-quinchao",
+    name: "Isla Quinchao",
+    lng: -73.51672329293373,
+    lat: -42.4656465944486,
+    description: "Descubre la Isla Quinchao visitando Dalcahue, Curaco de Vélez, Achao y Villa Quinchao, con sus históricas iglesias patrimoniales y paisajes típicos del archipiélago de Chiloé.",
+    image: "/mirador-alto-la-paloma.jpg",
+    type: "tour"
+  },
+  {
+    id: "isla-paraiso",
+    name: "Isla Paraíso",
+    lng: -73.73143750345923,
+    lat: -42.47649125331503,
+    description: "Descubre la Isla Quinchao visitando Dalcahue, Curaco de Vélez, Achao y Villa Quinchao, con sus históricas iglesias patrimoniales y paisajes típicos del archipiélago de Chiloé.",
+    image: "/tours/tour-7.webp",
     type: "tour"
   },
   {
@@ -71,15 +85,14 @@ const locations = [
 export default function MapSection() {
   const [activeId, setActiveId] = useState(null)
 
-  // Función para generar URL de WhatsApp por ubicación
-const getWhatsAppURL = (locationName, type) => {
-  const mensaje =
-    type === "aeropuerto"
-      ? `Hola! me interesa reservar un transfer desde/hacia ${locationName}.`
-      : `Hola! me interesa el tour "${locationName}". Me gustaría recibir más información.`
+  const getWhatsAppURL = (locationName, type) => {
+    const mensaje =
+      type === "aeropuerto"
+        ? `Hola! me interesa reservar un transfer desde/hacia ${locationName}.`
+        : `Hola! me interesa el tour "${locationName}". Me gustaría recibir más información.`
 
-  return `https://wa.me/56984546430?text=${encodeURIComponent(mensaje)}`
-}
+    return `https://wa.me/56984546430?text=${encodeURIComponent(mensaje)}`
+  }
 
   return (
     <div id="map-section" className="h-[450px] md:h-[550px] w-full rounded-3xl overflow-hidden shadow-2xl border border-gray-200 mt-8">
@@ -91,68 +104,71 @@ const getWhatsAppURL = (locationName, type) => {
             latitude={loc.lat}
             onClick={() => setActiveId(loc.id)}
           >
-            {/* PIN PROFESIONAL */}
-<MarkerContent>
-  <div className="relative flex items-center justify-center cursor-pointer group w-10 h-10">
+            <MarkerContent>
+              <div className="relative flex items-center justify-center cursor-pointer group w-10 h-10">
+                <div
+                  className={`absolute inset-0 rounded-full scale-50 group-hover:scale-100 transition-transform duration-300 ease-out
+                    ${loc.type === "aeropuerto" ? "bg-secondary/20" : "bg-primary/10"}
+                  `}
+                />
+                <div
+                  className={`relative z-10 w-4 h-4 md:w-5 md:h-5 rounded-full border-[2px] border-background shadow-sm transition-transform duration-200 group-hover:scale-110
+                    ${loc.type === "aeropuerto" ? "bg-secondary" : "bg-primary"}
+                  `}
+                />
+              </div>
+            </MarkerContent>
 
-    {/* Halo */}
-    <div
-      className={`absolute inset-0 rounded-full scale-50 group-hover:scale-100 transition-transform duration-300 ease-out
-        ${loc.type === "aeropuerto" ? "bg-secondary/20" : "bg-primary/10"}
-      `}
-    />
+            {activeId === loc.id && (
+              <MarkerPopup
+                onClose={() => setActiveId(null)}
+                className="p-0 w-[260px] overflow-hidden rounded-xl"
+              >
+                <div className="relative h-24 w-full">
+                  <img
+                    src={loc.image}
+                    alt={loc.name}
+                    className="w-full h-full object-cover"
+                  />
+                  <div className="absolute inset-0 bg-black/10" />
+                </div>
 
-    {/* Punto principal */}
-    <div
-      className={`relative z-10 w-4 h-4 md:w-5 md:h-5 rounded-full border-[2px] border-background shadow-sm transition-transform duration-200 group-hover:scale-110
-        ${loc.type === "aeropuerto" ? "bg-secondary" : "bg-primary"}
-      `}
-    />
-  </div>
-</MarkerContent>
+                <div className="p-4 space-y-3">
+                  <h3 className="font-semibold text-base">
+                    {loc.name}
+                  </h3>
 
-{activeId === loc.id && (
-  <MarkerPopup
-    onClose={() => setActiveId(null)}
-    className="p-0 w-[260px] overflow-hidden rounded-xl"
-  >
-    {/* Imagen superior compacta */}
-    <div className="relative h-24 w-full">
-      <img
-        src={loc.image}
-        alt={loc.name}
-        className="w-full h-full object-cover"
-      />
+                  <p className="text-sm text-muted-foreground">
+                    {loc.description}
+                  </p>
 
-      {/* Overlay sutil para mejor lectura */}
-      <div className="absolute inset-0 bg-black/10" />
-    </div>
+                  {/* Botones: dos para tours, uno para aeropuertos */}
+                  <div className={`flex gap-2 ${loc.type === "tour" ? "flex-col" : ""}`}>
+                    {loc.type === "tour" && (
+                      <Link
+                        to={`/tours/${loc.id}`}
+                        className="block w-full py-2 rounded-md text-sm font-medium text-center border border-primary text-primary hover:bg-primary/5 transition"
+                      >
+                        Más información
+                      </Link>
+                    )}
 
-    {/* Contenido */}
-    <div className="p-4 space-y-3">
-      <h3 className="font-semibold text-base">
-        {loc.name}
-      </h3>
-
-      <p className="text-sm text-muted-foreground">
-        {loc.description}
-      </p>
-
-<a
-  href={getWhatsAppURL(loc.name, loc.type)}
-  target="_blank"
-  rel="noopener noreferrer"
-  className={`block w-full py-2 rounded-md text-sm font-medium text-center transition
-    ${loc.type === "aeropuerto"
-      ? "bg-secondary text-white hover:opacity-90"
-      : "bg-primary text-white hover:opacity-90"
-    }`}
->
-  {loc.type === "aeropuerto" ? "Reservar transfer" : "Reservar ahora"}
-</a>
-    </div>
-  </MarkerPopup>
-)}
+                    <a
+                      href={getWhatsAppURL(loc.name, loc.type)}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className={`block w-full py-2 rounded-md text-sm font-medium text-center transition
+                        ${loc.type === "aeropuerto"
+                          ? "bg-secondary text-white hover:opacity-90"
+                          : "bg-primary text-white hover:opacity-90"
+                        }`}
+                    >
+                      {loc.type === "aeropuerto" ? "Reservar transfer" : "Reservar ahora"}
+                    </a>
+                  </div>
+                </div>
+              </MarkerPopup>
+            )}
           </MapMarker>
         ))}
       </Map>
