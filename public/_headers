@@ -4,4 +4,4 @@
   Referrer-Policy: strict-origin-when-cross-origin
   Permissions-Policy: geolocation=(), camera=(), microphone=()
   Strict-Transport-Security: max-age=63072000; includeSubDomains; preload
-  Content-Security-Policy: default-src 'self'; img-src 'self' data: https:; script-src 'self' blob:; style-src 'self' 'unsafe-inline'; connect-src 'self' https://basemaps.cartocdn.com https://*.cartocdn.com; worker-src 'self' blob:; frame-ancestors 'none';
+  Content-Security-Policy: default-src 'self'; img-src 'self' data: https:; script-src 'self' blob:; style-src 'self' 'unsafe-inline'; connect-src 'self' https://basemaps.cartocdn.com https://*.cartocdn.com https://formspree.io; worker-src 'self' blob:; frame-ancestors 'none';

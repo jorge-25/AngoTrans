@@ -149,6 +149,11 @@ export const tours = [
         "La ciudad de Dalcahue que en lengua Mapudungun significa lugar de Dalcas, es la capital de la comuna del mismo nombre, su Iglesia fue construida en el siglo XIX y forma parte de las 16 Iglesias del Archipiélago de Chiloé declaradas Patrimonio de la Humanidad por la UNESCO en el año 2000, su feria artesanal ubicada en su costanera se encuentran productos de artesanía hecho con productos locales y artesanos chilotes."
     },
     {
+      title: "Cascada Tocoihue",
+      description:
+        "Se encuentra a 32 kilómetros del sector urbano de Dalcahue, es una cascada de agua de más de 40 metros de altura, ubicada en un entorno privilegiado en medio de un bosque de árboles nativos, los que le entregan un escenario místico, según cuenta la leyenda, bajo esta cascada tenían que bañarse 40 noches quienes serían brujos, para poder quitar el bautismo católico."
+    },
+    {
       title: "Tenaún",
       description:
       "Su nombre proviene de la lengua huilliche y alude a los tres cerros o colinas que caracterizan al lugar, es una localidad costera que pertenece a la comuna de Dalcahue, fue fundada alrededor de 1567, siendo uno de los asentamientos más antiguos de la zona, conocido históricamente como un punto de extracción de alerce, su Iglesia, nuestra Señora del Patrocinio, tiene una torre principal y dos torres menores a cada lado, fue construida a mediados del siglo XIX y forma parte de las 16 Iglesias Patrimonio de la Humanidad declaradas por la UNESCO el año 2000."
@@ -211,6 +216,11 @@ export const tours = [
       title: "Iglesia Patrimonial de Nercón",
       description:
         "La Iglesia de Nercón, nuestra Señora de Gracia, ubidada a 4 kilómetros al sur de Castro, fue construida por maestros carpinteros locales entre 1880 y 1890, fue declarada patrimonio de la humanidad por la UNESCO el año 2000, en la lengua huilliche, Nercón significa: Entre Lomas."
+    },
+    {
+      title: "Chonchi",
+      description:
+        "Una ciudad ubicada en la Isla Grande de Chiloé, sus principales características son la cultura y el patrimonio que están en la arquitectura de sus diferentes Iglesias y casas patrimoniales, su Iglesia nuestra Señora del Rosario es un templo católico que forma parte del grupo de las 16 Iglesias de madera de Chiloé calificadas como Monumento Nacional de Chile y reconocidas como Patrimonio de la Humanidad por la UNESCO en el año 2000."
     },
     {
       title: "Iglesia de Vilipulli",
@@ -292,10 +302,11 @@ export const tours = [
 
   {
     slug: "isla-paraiso",
-    title: "Tour Isla Paraíso (pueblito Weltun)",
+    title: "Tour Isla Paraíso (pueblito Weltún)",
     description:
-      "Descubre Ancud, una de las ciudades más históricas de Chiloé, visitando el Fuerte San Antonio, el mercado municipal y la costanera.",
+      "Weltún es un espacio místico, entrar en esta aldea es una experiencia mágica e inolvidable, automáticamente uno se puede transportar a principios del siglo XIX, en este lugar vuelven a la vida las casas del Chiloé de antaño, todo esto en medio de un paisaje de enorme belleza. Weltún fue locación principal del largometraje 'Y de pronto el amanecer' del cineasta chileno Silvio Caiozzi, (2017), también la novela chilena 'Isla Paraíso', se grabó en este lugar entre los años 2018-2019.",
 
+    metaDescription: "Descubre el pueblito Weltún, conocido como Isla Paraíso, un lugar mágico que recrea el Chiloé antiguo. Incluye Dalcahue, mitología chilota y los tradicionales palafitos.",
     heroImage: "/tours/tour-10.webp",
 
     route: [
@@ -324,6 +335,16 @@ export const tours = [
       description:
         "La ciudad de Dalcahue que en lengua Mapudungun significa lugar de Dalcas, es la capital de la comuna del mismo nombre, su Iglesia fue construida en el siglo XIX y forma parte de las 16 Iglesias del Archipiélago de Chiloé declaradas Patrimonio de la Humanidad por la UNESCO en el año 2000, su feria artesanal ubicada en su costanera se encuentran productos de artesanía hecho con productos locales y artesanos chilotes."
     },
+    {
+      title: "Refugio de los Mitos de Chiloé",
+      description:
+        "Este parque es un emprendimiento local que presenta 22 figuras mitológicas ubicadas en un sendero boscoso, con sus respectivos carteles explicativos en cada uno de sus caminos, este espacio está pensado para todas las edades y para personas en situación de discapacidad, este parque es una iniciativa que fusiona naturaleza, relatos y patrimonio cultural de Chiloé."
+    },
+    {
+      title: "Palafitos de Chiloé",
+      description:
+        "Son casas de madera y tejuelas de alerce, edificadas sobre pilares de lumilla, constan de dos frentes, uno hacia la calle y otro hacia el mar que posee una terraza que cumple la función de patio, más allá de su atractivo, los coloridos Palafitos son para los pobladores un cómodo hogar, símbolo profundo de la relación del pueblo chilote con el mar."
+    }
   ],
   },
 ]

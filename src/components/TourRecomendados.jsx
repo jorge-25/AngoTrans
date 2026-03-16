@@ -44,7 +44,7 @@ const tours = [
     nombre: "Isla Paraíso",
     slug: "isla-paraiso",
     descripcion:
-      "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex ab ea, nemo qui eligendi corporis quidem, ad iste id inventore maxime dolor voluptate ipsum tempore assumenda sequi quaerat minima libero!",
+      "Descubre el pueblito Weltún, conocido como Isla Paraíso, un lugar mágico que recrea el Chiloé antiguo. Incluye Dalcahue, mitología chilota y los tradicionales palafitos.",
     imagenes: ["/tours/tour-7.webp"],
   },
 ]
