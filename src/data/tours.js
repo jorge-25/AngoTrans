@@ -6,7 +6,6 @@ export const tours = [
       "El muelle del tiempo está ubicado en la zona costa del Parque Tepuhueico, es una zona maravillosa y aún salvaje, es un área de conservación con acantilados poblados de aves, se pueden observar delfines y lobos marinos, en una breve caminata se llega al Muelle del Tiempo, obra realizada por el escultor Marcelo Orellana Rivera (apodado chumono).",
 
     metaDescription: "Explora la costa de Chiloé pasando por iglesias patrimoniales, lagos y pueblos tradicionales hasta llegar al icónico Muelle del Tiempo frente al océano Pacífico.",
-    heroImage: "/muelle-del-tiempo.jpg",
 
     route: [
       [-73.7669, -42.4721] // Castro
@@ -52,6 +51,15 @@ export const tours = [
         "Son casas de madera y tejuelas de alerce, edificadas sobre pilares de lumilla, constan de dos frentes, uno hacia la calle y otro hacia el mar que posee una terraza que cumple la función de patio, más allá de su atractivo, los coloridos Palafitos son para los pobladores un cómodo hogar, símbolo profundo de la relación del pueblo chilote con el mar."
     }
   ],
+
+  images: [
+    "tour-35.webp",
+    "tour-34.webp",
+    "tour-37.webp",
+    "tour-36.webp",
+    "/muelle-del-tiempo.jpg"
+  ]
+
   },
 
   {
@@ -61,7 +69,6 @@ export const tours = [
       "Un hermoso parque ubicado en la costa occidental de la Isla de la cual toma su nombre, en la región de los lagos dentro de la comuna de Chonchi, cercano al pueblo de Cucao, con una superficie de 42.567 hectáreas que destaca por su aire costero y hermosas pasarelas que lo llevan a lo profundo del bosque donde se pueden observar diversas especies de árboles nativos, y su fauna está compuesta por una importante cantidad de especies endémicas de mamíferos y aves debido a la condición insular del territorio.",
 
     metaDescription: "Recorre la costa de Chiloé hasta el Parque Nacional Chiloé, explorando bosques nativos, pasarelas y paisajes naturales, junto a pueblos tradicionales e iglesias patrimoniales.",
-    heroImage: "/tours/tour-20.webp",
 
     route: [
       [-73.7669, -42.4721], // Castro
@@ -107,6 +114,14 @@ export const tours = [
         "Son casas de madera y tejuelas de alerce, edificadas sobre pilares de lumilla, constan de dos frentes, uno hacia la calle y otro hacia el mar que posee una terraza que cumple la función de patio, más allá de su atractivo, los coloridos Palafitos son para los pobladores un cómodo hogar, símbolo profundo de la relación del pueblo chilote con el mar."
     }
   ],
+
+  images: [
+    "/tours/tour-20.webp",
+    "/tours/tour-18.webp",
+    "/tours/tour-19.webp",
+    "/tours/tour-22.webp"
+  ]
+
   },
 
   {
@@ -116,7 +131,6 @@ export const tours = [
       "Este recorrido por la costa norte de Chiloé combina naturaleza, historia y patrimonio cultural. Durante el tour se visita Dalcahue y su tradicional feria artesanal, la impresionante cascada Tocoihue y el pintoresco pueblo de Tenaún con su iglesia patrimonial. También se conoce la histórica iglesia de Colo y la Isla Aucar, un pequeño islote conectado por una pasarela de madera y conocido como la Isla de las Almas Navegantes.",
 
     metaDescription: "Recorre la costa norte de Chiloé visitando Dalcahue, la cascada Tocoihue, la histórica iglesia de Tenaún, la iglesia patrimonial de Colo y la mágica Isla Aucar, en un viaje lleno de cultura, naturaleza y tradición chilota.",
-    heroImage: "/tours/tour-17.webp",
 
     route: [
       [-73.7669, -42.4721], // Castro
@@ -174,16 +188,23 @@ export const tours = [
         "Son casas de madera y tejuelas de alerce, edificadas sobre pilares de lumilla, constan de dos frentes, uno hacia la calle y otro hacia el mar que posee una terraza que cumple la función de patio, más allá de su atractivo, los coloridos Palafitos son para los pobladores un cómodo hogar, símbolo profundo de la relación del pueblo chilote con el mar."
     }
   ],
+
+  images: [
+    "/tours/tour-17.webp",
+    "/tours/tour-32.webp",
+    "/tours/tour-33.webp",
+    "/tours/tour-31.webp",
+  ]
+
   },
 
   {
     slug: "isla-lemuy-iglesias",
     title: "Tour Isla Lemuy y sus Iglesias",
     description:
-      "Este recorrido permite descubrir la Isla Lemuy, uno de los lugares más tradicionales del Archipiélago de Chiloé, conocido por su paisaje costero y sus históricas iglesias de madera. Durante el tour se visitan Chonchi y la Iglesia Patrimonial de Nercón, para luego continuar hacia Lemuy y conocer las iglesias de Ichuac, Detif y Aldachildo, templos que forman parte de las 16 Iglesias de Chiloé declaradas Patrimonio de la Humanidad por la UNESCO. El recorrido permite apreciar la arquitectura chilota, la cultura local y los paisajes del archipiélago, finalizando con el regreso a Castro y una visita a los tradicionales palafitos que caracterizan la ciudad.",
+      "Este recorrido permite descubrir la Isla Lemuy, uno de los lugares más tradicionales del Archipiélago de Chiloé, conocido por su paisaje costero y sus históricas iglesias de madera. Durante el tour se visitan la Iglesia Patrimonial de Nercón y la Iglesia de Chonchi, para luego continuar hacia Lemuy y conocer las iglesias de Ichuac, Detif y Aldachildo, templos que forman parte de las 16 Iglesias de Chiloé declaradas Patrimonio de la Humanidad por la UNESCO. El recorrido permite apreciar la arquitectura chilota, la cultura local y los paisajes del archipiélago, finalizando con el regreso a Castro y una visita a los tradicionales palafitos que caracterizan la ciudad.",
 
     metaDescription: "Recorre la Isla Lemuy y descubre sus iglesias patrimoniales de madera como Ichuac, Detif y Aldachildo, además de Chonchi y los tradicionales palafitos de Castro.",
-    heroImage: "/tours/tour-16.webp",
 
     route: [
       [-73.7669, -42.4721], // Castro
@@ -233,6 +254,11 @@ export const tours = [
         "Son casas de madera y tejuelas de alerce, edificadas sobre pilares de lumilla, constan de dos frentes, uno hacia la calle y otro hacia el mar que posee una terraza que cumple la función de patio, más allá de su atractivo, los coloridos Palafitos son para los pobladores un cómodo hogar, símbolo profundo de la relación del pueblo chilote con el mar."
     }
   ],
+
+  images: [
+    "/tours/tour-16.webp"
+  ]
+
   },
 
   {
@@ -242,7 +268,6 @@ export const tours = [
       "Este recorrido permite conocer la Isla Quinchao, uno de los destinos más representativos del Archipiélago de Chiloé. El tour comienza con una visita a Dalcahue, conocido por su feria artesanal y su iglesia patrimonial, para luego continuar hacia la isla cruzando el canal hacia Curaco de Vélez, un tranquilo pueblo costero rodeado de naturaleza. Durante el viaje se visita Achao, donde se encuentra la Iglesia Santa María de Loreto, considerada la iglesia de madera más antigua de Chile y parte del conjunto de Iglesias de Chiloé declaradas Patrimonio de la Humanidad por la UNESCO. El recorrido continúa hacia Villa Quinchao y su imponente iglesia, la más grande del archipiélago, finalizando con el regreso a Castro y la visita a los tradicionales palafitos que caracterizan la ciudad.",
 
     metaDescription: "Descubre la Isla Quinchao visitando Dalcahue, Curaco de Vélez, Achao y Villa Quinchao, con sus históricas iglesias patrimoniales y paisajes típicos del archipiélago de Chiloé.",
-    heroImage: "/mirador-alto-la-paloma.jpg",
 
     route: [
       [-73.7669, -42.4721], // Castro
@@ -252,6 +277,7 @@ export const tours = [
       { name: "Castro", lng: -73.7644, lat: -42.4823 },
       { name: "Dalcahue", lng: -73.6473, lat: -42.3795 },
       { name: "Curaco de Vélez", lng: -73.6021, lat: -42.4387 },
+      { name: "Bosque Palqui", lng: -73.5295, lat: -42.4262 },
       { name: "Achao", lng: -73.4881, lat: -42.4709 },
       { name: "Villa Quinchao", lng: -73.4270, lat: -42.5351 },
       { name: "Palafitos de Pedro Montt", lng: -73.7649, lat: -42.4703 },
@@ -261,6 +287,7 @@ export const tours = [
       "Salida desde Castro",
       "Dalcahue - Costanera - Feria Artesanal - Iglesia - Plaza",
       "Curaco de Vélez",
+      "Bosque Palqui",
       "Achao",
       "Villa Quinchao y su Iglesia",
       "Palafitos de Pedro Montt"
@@ -278,6 +305,11 @@ export const tours = [
       "Un pueblo ubicado en la Isla de Quinchao, es conocido por su humedal, bahía Curaco de Vélez que está declarado Santuario de la Naturaleza, posee una gran superficie donde se pueden observar distintos tipos de aves, pertenece a la comuna de Curaco de Vélez, su nombre en mapudungun significa agua sobre piedra (cura - piedra y co-agua) y Vélez es el apeliido del primer encomendero español llegado en el siglo XVII."
     },
     {
+      title: "Bosque Palqui",
+      description:
+      "Es una iniciativa de conservación familiar, privada, que busca conservar y restaurar 14 hectáreas de bosque nativo en la Isla de Quinchao, Archipiélago de Chiloé, son la primera división de Nestwatch en Chile, realizan monitoreos de nidos de aves y monitoreo del marsupial Monito del Monte, además, refugio de ranitas, parte de la ONG ranita de Darwin, buscando proteger nuestros anfibios, tienen en curso varios proyectos de restauración y plantación de bosque nativo, realizan talleres y senderismo donde unen arte y educación ambiental.",
+    },
+    {
       title: "Achao",
       description:
       "Un pueblo del Archipiélago de Chiloé, es la capital de la comuna de Quinchao ubicado en la Isla del mismo nombre, acá se encuentra la Iglesia Santa María de Loreto de Achao, construida entre 1730 y 1740 por los jesuitas en la Isla Quinchao, siendo la construcción de madera más antigua de Chile y un destacado ejemplo de la escuela chilota de arquitectura religiosa, declarada Monumento Nacional en el año 1951 y está dentro de las 16 Iglesias de Chiloé que fueron reconocidas Patrimonio de la Humanidad por la UNESCO en el año 2000."
@@ -288,16 +320,16 @@ export const tours = [
       "Pertenece a la comuna del mismo nombre, ubicada en la Isla de Quinchao, donde se encuentra la Iglesia Nuestra Señora de Gracia, fue construida en el siglo XVII, pero su edificación terminó en 1880, es la Iglesia más grande del Archipiélago de Chiloé, midiendo 53 metros de largo, 18,4 metros de ancho y posee una torre de más de 18 metros. Esta Iglesia forma parte de las 16 Iglesias de madera que fueron declaradas por la UNESCO Patrimonio de la Humanidad en el año 2000."
     },
     {
-      title: "Bosque Palqui",
-      description:
-      "Es una iniciativa de conservación familiar, privada, que busca conservar y restaurar 14 hectáreas de bosque nativo en la Isla de Quinchao, Archipiélago de Chiloé, son la primera división de Nestwatch en Chile, realizan monitoreos de nidos de aves y monitoreo del marsupial Monito del Monte, además, refugio de ranitas, parte de la ONG ranita de Darwin, buscando proteger nuestros anfibios, tienen en curso varios proyectos de restauración y plantación de bosque nativo, realizan talleres y senderismo donde unen arte y educación ambiental.",
-    },
-    {
       title: "Palafitos de Chiloé",
       description:
         "Son casas de madera y tejuelas de alerce, edificadas sobre pilares de lumilla, constan de dos frentes, uno hacia la calle y otro hacia el mar que posee una terraza que cumple la función de patio, más allá de su atractivo, los coloridos Palafitos son para los pobladores un cómodo hogar, símbolo profundo de la relación del pueblo chilote con el mar."
     }
   ],
+
+  images: [
+    "/mirador-alto-la-paloma.jpg"
+  ]
+
   },
 
   {
@@ -307,7 +339,6 @@ export const tours = [
       "Weltún es un espacio místico, entrar en esta aldea es una experiencia mágica e inolvidable, automáticamente uno se puede transportar a principios del siglo XIX, en este lugar vuelven a la vida las casas del Chiloé de antaño, todo esto en medio de un paisaje de enorme belleza. Weltún fue locación principal del largometraje 'Y de pronto el amanecer' del cineasta chileno Silvio Caiozzi, (2017), también la novela chilena 'Isla Paraíso', se grabó en este lugar entre los años 2018-2019.",
 
     metaDescription: "Descubre el pueblito Weltún, conocido como Isla Paraíso, un lugar mágico que recrea el Chiloé antiguo. Incluye Dalcahue, mitología chilota y los tradicionales palafitos.",
-    heroImage: "/tours/tour-10.webp",
 
     route: [
       [-73.7669, -42.4721], // Castro
@@ -346,5 +377,13 @@ export const tours = [
         "Son casas de madera y tejuelas de alerce, edificadas sobre pilares de lumilla, constan de dos frentes, uno hacia la calle y otro hacia el mar que posee una terraza que cumple la función de patio, más allá de su atractivo, los coloridos Palafitos son para los pobladores un cómodo hogar, símbolo profundo de la relación del pueblo chilote con el mar."
     }
   ],
+
+  images: [
+    "/tours/tour-10.webp",
+    "/tours/tour-8.webp",
+    "/tours/tour-7.webp",
+    "/tours/tour-9.webp"
+  ]
+
   },
 ]

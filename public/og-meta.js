@@ -12,7 +12,7 @@ if (path === "/hernan") {
     "Hernan Andrade - Conductor Profesional | AngoTrans",
     "Conductor profesional en Chiloé. Tours personalizados y traslados privados.",
     "https://angotrans.cl/hernan",
-    "https://angotrans.cl/AngoTransLogo.png"
+    "https://angotrans.cl/angotrans-og.jpg"
   );
 }
 
@@ -21,6 +21,6 @@ if (path === "/servicios") {
     "Servicios de Transporte y Tours en Chiloé | AngoTrans",
     "Conoce nuestros tours personalizados y traslados privados desde Castro, Ancud y todo Chiloé.",
     "https://angotrans.cl/servicios",
-    "https://angotrans.cl/AngoTransLogo.png"
+    "https://angotrans.cl/angotrans-og.jpg"
   );
 }

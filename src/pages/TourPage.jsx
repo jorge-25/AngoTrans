@@ -2,6 +2,7 @@ import { useParams } from "react-router-dom"
 import { useEffect } from "react"
 import { motion } from "framer-motion"
 import { tours } from "../data/tours"
+import ImageCarousel from "../components/GaleriaToursDetalle"
 
 import PageTransition from "../components/PageTransition"
 import TourMap from "../components/map/TourMap"
@@ -107,13 +108,10 @@ export default function TourPage() {
             </div>
 
             {/* Derecha: imagen */}
-            <div className="rounded-2xl overflow-hidden shadow-lg aspect-[4/3]">
-              <img
-                src={tour.heroImage}
-                alt={tour.title}
-                className="w-full h-full object-cover"
-              />
-            </div>
+            <ImageCarousel
+              images={tour.images ?? [tour.heroImage]}
+              alt={tour.title}
+            />
 
           </motion.div>
         </div>

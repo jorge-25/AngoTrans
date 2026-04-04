@@ -33,8 +33,21 @@ export default function App() {
       <AnimatePresence mode="wait">
         <Suspense
           fallback={
-            <div style={{ textAlign: "center", padding: "60px" }}>
-              Cargando...
+            <div className="fixed inset-0 flex items-center justify-center bg-white z-50">
+              <div className="flex flex-col items-center gap-4">
+                {/* Spinner */}
+                <div className="relative w-16 h-16">
+                  <div className="absolute inset-0 rounded-full border-4 border-primary/20" />
+                  <div className="absolute inset-0 rounded-full border-4 border-transparent border-t-primary animate-spin" />
+                  <div className="absolute inset-2 rounded-full border-4 border-transparent border-t-primary-light animate-spin [animation-duration:0.6s]" />
+                </div>
+                {/* Dots */}
+                <div className="flex gap-1.5">
+                  <div className="w-2 h-2 rounded-full bg-primary animate-bounce [animation-delay:0ms]" />
+                  <div className="w-2 h-2 rounded-full bg-primary-light animate-bounce [animation-delay:150ms]" />
+                  <div className="w-2 h-2 rounded-full bg-primary-dark animate-bounce [animation-delay:300ms]" />
+                </div>
+              </div>
             </div>
           }
         >

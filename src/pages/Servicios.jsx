@@ -56,6 +56,8 @@ export default function Servicios() {
 	"/tours/tour-4.webp",
 	"/tours/tour-5.webp",
 	"/tours/tour-6.webp",
+	"/tours/tour-35.webp",
+	"/tours/tour-34.webp",
 	"/tours/tour-7.webp",
 	"/tours/tour-8.webp",
 	"/tours/tour-9.webp",
@@ -65,6 +67,7 @@ export default function Servicios() {
 	"/tours/tour-13.webp",
 	"/tours/tour-14.webp",
 	"/tours/tour-15.webp",
+  "/tours/tour-32.webp",
 	"/tours/tour-16.webp",
 	"/tours/tour-17.webp",
 	"/tours/tour-18.webp",
@@ -81,8 +84,9 @@ export default function Servicios() {
 	"/tours/tour-29.webp",
 	"/tours/tour-30.webp",
 	"/tours/tour-31.webp",
-  "/palafitos.webp",
-  "/iglesiaCastro.webp"
+	"/tours/tour-33.webp",
+	"/tours/tour-36.webp",
+	"/tours/tour-37.webp",
 	]
 
   const servicios = [

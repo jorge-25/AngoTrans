@@ -14,7 +14,7 @@ const preguntas = [
     },
     {
         pregunta: "¿Cuánto dura un tour en Chiloé?",
-        respuesta: "La duración depende del recorrido elegido. La mayoría de nuestros tours en Chiloé duran entre 4 y 8 horas, aunque también organizamos experiencias de día completo. Diseñamos cada ruta considerando distancias, clima y preferencias del pasajero."
+        respuesta: "La duración depende del recorrido elegido. La mayoría de nuestros tours en Chiloé duran entre 7 y 9 horas. Diseñamos cada ruta considerando distancias, clima y preferencias del pasajero."
     },
     {
         pregunta: "¿Realizan traslado privado y transfer al aeropuerto de Mocopulli?",

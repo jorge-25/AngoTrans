@@ -31,7 +31,7 @@ const locations = [
     name: "Tour de la Costa",
     lng: -73.37504150421796,
     lat: -42.33145782627161,
-    description: "Recorre la costa de Chiloé hasta el Parque Nacional Chiloé, explorando bosques nativos, pasarelas y paisajes naturales, junto a pueblos tradicionales e iglesias patrimoniales.",
+    description: "Recorre la costa norte de Chiloé visitando Dalcahue y sus maravillas, la cascada Tocoihue, Tenaún, la histórica iglesia de Colo y la Isla Aucar, un pintoresco islote unido por una pasarela.",
     image: "/tours/tour-11.webp",
     type: "tour"
   },
@@ -58,7 +58,7 @@ const locations = [
     name: "Isla Paraíso",
     lng: -73.73143750345923,
     lat: -42.47649125331503,
-    description: "Descubre la Isla Quinchao visitando Dalcahue, Curaco de Vélez, Achao y Villa Quinchao, con sus históricas iglesias patrimoniales y paisajes típicos del archipiélago de Chiloé.",
+    description: "Descubre el pueblito Weltún, conocido como Isla Paraíso, un lugar mágico que recrea el Chiloé antiguo. Incluye Dalcahue, mitología chilota y los tradicionales palafitos.",
     image: "/tours/tour-7.webp",
     type: "tour"
   },
